@@ -222,5 +222,7 @@ def player_with_longest_name
     end 
    end 
   player_names.sort_by!(&:length).reverse! 
+  player_names.first 
+end 
 
 
