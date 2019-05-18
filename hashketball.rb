@@ -210,7 +210,8 @@ def most_points_scored
       points[player] = stats[:points]
     end 
   end 
-  points 
+  points = points.sort_by {|name, points| points}
+  return points.last.first
 
   
   
